@@ -1,9 +1,11 @@
 package DataTypes;
 
-public class DataType {
+import Control.Control;
+
+public class DataType extends Control {
 
 
-    public static void home(){
+    public void home(){
         int myNum = 5;
         float myFloatNum = 5.99f;
         char myLetter = 'D';
@@ -15,8 +17,9 @@ public class DataType {
         System.out.println(String.format("Tipo de dado Character:\n%s", myLetter));
         System.out.println(String.format("Tipo de dado Boolean:\n%s", myBool));
         System.out.println(String.format("Tipo de dado String:\n%s", text));
+        timer();
     }
-    public static void numbers(){
+    public void numbers(){
 
         /* Integer Types */
 
@@ -52,16 +55,18 @@ public class DataType {
         double d1 = 12E4d;
         System.out.println(f1);
         System.out.println(d1);
+        timer();
 
     }
-    public static void Booleans(){
+    public void Booleans(){
         boolean isJavaFun = true;
         boolean isFishTasty = false;
         System.out.println(isJavaFun);     // Outputs true
         System.out.println(isFishTasty);   // Outputs false
+        timer();
     }
 
-    public static void Characters(){
+    public void Characters(){
         char myGrade = 'B';
         System.out.println(myGrade);
 
@@ -72,9 +77,10 @@ public class DataType {
 
         String greeting = "Hello World";
         System.out.println(greeting);
+        timer();
     }
 
-    public static void real(){
+    public void real(){
         // Create variables of different data types
         int items = 50;
         float costPerItem = 9.99f;
@@ -85,5 +91,15 @@ public class DataType {
         System.out.println("Number of items: " + items);
         System.out.println("Cost per item: " + costPerItem + currency);
         System.out.println("Total cost = " + totalCost + currency);
+        timer();
     }
+
+    public void callback(){
+        home();
+        numbers();
+        Booleans();
+        Characters();
+        real();
+    }
+
 }
