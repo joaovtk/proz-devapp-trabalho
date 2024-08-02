@@ -2,10 +2,16 @@ package DataTypes;
 
 import Control.Control;
 
+import java.util.Timer;
+
 public class DataType extends Control {
 
 
     public void home(){
+        System.out.println("\n" + "Conforme explicado no capítulo anterior, uma variável em Java deve ser um tipo de dados especificado:");
+        timer(10);
+
+        timer(10);
         int myNum = 5;
         float myFloatNum = 5.99f;
         char myLetter = 'D';
@@ -17,7 +23,15 @@ public class DataType extends Control {
         System.out.println(String.format("Tipo de dado Character:\n%s", myLetter));
         System.out.println(String.format("Tipo de dado Boolean:\n%s", myBool));
         System.out.println(String.format("Tipo de dado String:\n%s", text));
-        timer();
+        timer(5);
+        System.out.println("Os tipos de dados são divididos em dois grupos:\n" +
+                "\n" +
+                "Tipos de dados primitivos - inclui byte, short, int, long, float, double, boolean e char\n" +
+                "Tipos de dados não primitivos - como String, Arrays e Classes (você aprenderá mais sobre eles em um capítulo posterior)\n" +
+                "Tipos de dados primitivos\n" +
+                "Um tipo de dados primitivo especifica o tamanho e o tipo dos valores das variáveis \u200B\u200Be não possui métodos adicionais.\n" +
+                "\n" +
+                "Existem oito tipos de dados primitivos em Java:");
     }
     public void numbers(){
 
@@ -55,7 +69,7 @@ public class DataType extends Control {
         double d1 = 12E4d;
         System.out.println(f1);
         System.out.println(d1);
-        timer();
+        timer(5);
 
     }
     public void Booleans(){
@@ -63,7 +77,7 @@ public class DataType extends Control {
         boolean isFishTasty = false;
         System.out.println(isJavaFun);     // Outputs true
         System.out.println(isFishTasty);   // Outputs false
-        timer();
+        timer(5);
     }
 
     public void Characters(){
@@ -77,7 +91,7 @@ public class DataType extends Control {
 
         String greeting = "Hello World";
         System.out.println(greeting);
-        timer();
+        timer(5);
     }
 
     public void real(){
@@ -91,7 +105,7 @@ public class DataType extends Control {
         System.out.println("Number of items: " + items);
         System.out.println("Cost per item: " + costPerItem + currency);
         System.out.println("Total cost = " + totalCost + currency);
-        timer();
+        timer(5);
     }
 
     public void callback(){

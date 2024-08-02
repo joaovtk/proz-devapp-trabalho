@@ -5,9 +5,9 @@ import java.util.concurrent.TimeUnit;
 
 public class Control {
     static int op = 0;
-    public void timer(){
+    public void timer(int time){
         try {
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(time);
         }catch (Exception err){
             System.out.println();
         }
